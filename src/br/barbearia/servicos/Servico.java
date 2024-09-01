@@ -21,7 +21,7 @@ public abstract class Servico {
         this.descricao = descricao;
     }
 
-    public void setPreci(double preco){
+    public void setPreco(double preco){
         this.preco = preco;
     }
 

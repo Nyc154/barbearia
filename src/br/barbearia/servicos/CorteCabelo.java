@@ -1,12 +1,28 @@
 package br.barbearia.servicos;
 
-public class CorteCabelo extends Servico {
+import br.barbearia.interfaces.Servico;
+
+public class CorteCabelo implements Servico {
+    private String descricao;
+    private double preco;
+
     public CorteCabelo(String descricao, double preco) {
-        super(descricao, preco);
-    }
-    @Override
-    public void executar(){
-        System.out.println("Serviço de Corte de Cabelo selecionado!");
+        this.descricao = descricao;
+        this.preco = preco;
     }
 
+    @Override
+    public void executar() {
+        System.out.println("Corte Cabelo: " + descricao + "no valor: " + preco);
+    }
+
+    @Override
+    public String getDescricao() {
+        return descricao;
+    }
+
+    @Override
+    public double getPreco() {
+        return preco;
+    }
 }
