@@ -5,6 +5,7 @@ public class Funcionario extends Pessoa {
 
     public Funcionario(String nome, String cpf, String telefone, String cargoFuncionario) {
         super(nome, cpf, telefone);
+        this.cargo = cargoFuncionario;
     }
 
     public String getCargo() {
@@ -17,6 +18,6 @@ public class Funcionario extends Pessoa {
 
     @Override
     public void exibirDados(){
-        System.out.println("Nome: " + getNome() + "\nCPF: " + getCpf() + "\n Telefone: " + getTelefone() + "\nCargo: " + getCargo());
+        System.out.println("Nome: " + getNome() + "\nCPF: " + getCpf() + "\nTelefone: " + getTelefone() + "\nCargo: " + getCargo() + "\n----------------------------");
     }
 }
