@@ -8,6 +8,6 @@ public class Cliente extends Pessoa {
 
     @Override
     public void exibirDados() {
-        System.out.println("Cliente: " + getNome() + " - Telefone: " + getTelefone());
+        System.out.println("Cliente: " + getNome() + "\nTelefone: " + getTelefone() + "\n----------------------------------");
     }
 }

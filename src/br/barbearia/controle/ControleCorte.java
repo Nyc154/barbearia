@@ -1,12 +1,12 @@
 package br.barbearia.controle;
 
-import br.barbearia.modelo.Cliente;
+import br.barbearia.modelo.Corte;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ControleCorte {
-    private List<Cliente> listaCorte;
+    private List<Corte> listaCorte;
 
 
     public ControleCorte() {
@@ -14,18 +14,18 @@ public class ControleCorte {
 
     }
 
-    public void adicionar(Cliente cliente){
-        this.listaCliente.add(cliente);
+    public void adicionar(Corte corte){
+        this.listaCorte.add(corte);
     }
 
-    public void remover(Cliente cliente){
-        this.listaCliente.remove(cliente);
+    public void remover(Corte corte){
+        this.listaCorte.remove(corte);
     }
 
-    public String encontrar(Cliente cliente){
-        for (Cliente clie : listaCliente){
-            if (clie == cliente){
-                return cliente.toString();
+    public String encontrar(String corte){
+        for (Corte cort : listaCorte){
+            if (cort == corte){
+                return corte.toString();
             }else {
                 return "Usuario não encontrado";
             }
@@ -34,8 +34,8 @@ public class ControleCorte {
     }
 
     public void exibir(){
-        for (Cliente clie : listaCliente){
-            clie.exibirDados();
+        for (Corte cort : listaCorte){
+            cort.exibirDados();
         }
     }
 }
